@@ -1,0 +1,61 @@
+https://www.youtube.com/watch?v=ij3i6ZPoEi0&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6vA5f
+1-Demo prototype website CMS (content management system) blog | Part 0
+
+    -apresentação do projeto, sendo um site institucional com blog e area administrativa com 
+        login e senha embutido 
+
+
+https://www.youtube.com/watch?v=YaxPsE0-D5w&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6vA5f&index=2
+2-Membuat project laravel via composer | Part 01
+
+    -criando o projeto laravel via composer (laravel 8)
+        composer create-project laravel/laravel:^8.0 myblog
+
+    alterado 'timezone' em 'config/app' para 'timezone' => 'America/Sao_Paulo',
+
+
+https://www.youtube.com/watch?v=PJCwGfaROek&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6vA5f&index=3  
+3-Membuat autentikasi login | Part 2
+
+    instalando o laravel/ui, que traz a biblioteca de login nativo do composer
+        composer require laravel/ui
+
+    -criando o login de autenticação 
+        php artisan ui:auth 
+        salvo automaticamente em: myblog\app\Http\Controllers\Auth e também em: resources\views
+
+    -criado o seeder 'UserTableSeeder' em: myblog\database\seeders\UserTableSeeder.php 
+        artisan make:seeder UserTableSeeder
+        neste foi incluido: use Illuminate\Support\Facades\DB;
+        neste foi incluido: use Illuminate\Support\Str;
+        neste foi incluido: use Illuminate\Support\Facades\Hash;
+        feito as configurações na function: run()
+
+    -feita as devidas configurações em: myblog\database\seeders\DatabaseSeeder.php na function: run()
+
+    -feito as devidas configurações em: .env
+
+    -criado o banco de dados do projeto em phpmyadmin, com o nome: db_myblog 
+
+    -rodado as migration atuais 
+        php artisan migrate 
+
+    -rodado o: php artisan migrate:fresh, para limpar todas as tabelas e rodar as migration novamente 
+        em seguida rodado o: php artisan migrate:fresh --seed, para limpar as tabelas, refazer a migrate e 
+            em seguida enviar os dados a serem enviados, no caso, o 'User' 'superadmin'
+
+    -confugurada a 'Route' 'web', inserindo usando a class 'Auth' e dizendo que 'register' é false, sendo assim, 
+        não permitindo que qualquer um se registre, a não ser pelo cadastro do superadmin 
+            superadmin@mail.test
+            superadmin
+
+
+https://www.youtube.com/watch?v=b_SQBkSg8jw&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6vA5f&index=4
+4-Membuat layout autentikasi login | Part 3
+
+    iniciar
+
+
+
+    
+
