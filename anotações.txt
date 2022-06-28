@@ -53,7 +53,42 @@ https://www.youtube.com/watch?v=PJCwGfaROek&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6v
 https://www.youtube.com/watch?v=b_SQBkSg8jw&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6vA5f&index=4
 4-Membuat layout autentikasi login | Part 3
 
-    iniciar
+    -Criando layouts de autenticação de login
+        criado a pasta 'vendor' em 'public' , e em 'vendor', inserido as pastas de: bootstrap, jquery e my-auth 
+
+    -em views/layouts foi criado o arquivo 'auth.blade.php', 
+
+    -criada a pasta template de '_auth'
+        criada as referidas views de login (HTML e CSS), inserido no template os link e scripts de jquery, css e bootstrap
+        feita as configurações de @section e @yield nestas views
+    
+
+https://www.youtube.com/watch?v=i0y8i2kiHqM&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6vA5f&index=6
+5-Membuat validasi form login | Part 4
+
+    -Fazendo a validação do formulário de login
+        no form foi configurado o 'method' do from e também incluído o @csrf 
+        foi feito o método de validação direto no input de login e senha: @error('email') is-invalid @enderror
+        foi usado o método 'old' para que não perca dados preecnhidos corretamente na validação: value="{{ old('email') }}
+
+
+ https://www.youtube.com/watch?v=zEAYNGqn83I&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6vA5f&index=6
+ 6-Membuat layout dashboard | Part 5   
+
+    -Criar layout do painel(dashboard)
+        inserido pastas em public/vendor, com conteudos necessário para o front-end desta etapa 
+        criado o arquivo dashboard.blade.php, em 'layouts'
+
+    -criação das views: footer, navbar e siderbar na pasta '_dashboard' já com HTML completo 
+
+    parei em 4:25
+
+
+
+
+
+
+
 
 
 
