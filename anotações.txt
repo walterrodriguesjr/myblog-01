@@ -80,8 +80,73 @@ https://www.youtube.com/watch?v=i0y8i2kiHqM&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6v
         criado o arquivo dashboard.blade.php, em 'layouts'
 
     -criação das views: footer, navbar e siderbar na pasta '_dashboard' já com HTML completo 
+        na view 'dashboard' em resources\views\layouts\, foram feitos os '@include' e '@yield' dos contents, 
+            como navbar, sidebar, footer e etc...
 
-    parei em 4:25
+    -na view 'dashboard' foram incluidos os 'links' de css e 'scripts' de js, das referidas bibliotecas 
+
+
+https://www.youtube.com/watch?v=UfPysX_ffRI&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6vA5f&index=7
+7-Mengubah redirect autentikasi login | Part 6
+    
+    -Alterar o redirecionamento de autenticação de login
+        criado o controller de 'dashboard'
+            php artisan make:controller DashboardController
+
+        na pasta 'views' foi criada a a pasta 'dashboard' e nesta o arquivo 'index.blade.php'
+            neste foi feito '@extends' de 'layouts.dashboard' e também incluido as '@section'
+
+        no controller 'DashboardController' foi incluida a function 'index' que retorna a view index 
+
+        em 'routes/web' foi incluido um Route::group, a qual recebeu um Route::get '/', acessando
+            'DashboardController' e acionando a function 'index' 
+
+        em app/Providers no arquivo 'RouteServiceProvider.php', foi incluido: 
+            public const DASHBOARD = '/dashboard/a';
+
+        em app/Http/Controllers/Auth no aruivo 'LoginController.php', foi setado: 
+            protected $redirectTo = RouteServiceProvider::DASHBOARD;
+
+        incluido dinamicamente o nome de quem está logado em: navbar, sidebar ee 'content'
+            {{ Auth::user()->name }}
+
+        em 'app\Http\Middleware\RedirectIfAuthenticated.php' foi alterado: 
+            return redirect(RouteServiceProvider::DASHBOARD); para que, ao tentar ir para login e já estiver 
+                logado, retorna para o dashboard 
+
+
+https://www.youtube.com/watch?v=l3agbedGVZk&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6vA5f&index=8
+8-Menambahkan fitur logout di halaman dashboard | Part 7
+
+    -Adicionado recurso de logout na página do dashboard
+        em 'navbar.blade.php' foi incluido o sistema de 'logout', a estrutura foi copiada de app.blade.php 
+
+        em 'app\Http\Controllers\Auth\' em 'LoginController.php' foi incuido a 'function': logout que, 
+            ao realizar o logout, o admin é redirecionado para a pagina de login 
+
+    -finalizado o sistema de login e logout completo de autenticação do 'admin'
+
+
+https://www.youtube.com/watch?v=tgYdDBm_-6s&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6vA5f&index=9
+9-Membuat fitur multi bahasa | Part 8
+
+    -Criando recursos em vários idiomas
+        
+
+        
+
+
+
+
+
+
+        
+
+        
+
+        
+        
+
 
 
 
