@@ -155,7 +155,26 @@ https://www.youtube.com/watch?v=9lFcLcMgsKQ&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6v
 11-Menambahkan fitur breadcrumbs | Part 9
 
     -Adicionado recurso de breadcrumbs(sistema de migalhas de pão)
-        
+        instalando o breadcrumbs
+            composer require diglactic/laravel-breadcrumbs
+
+        criado a 'Route' 'breadcrumbs.php', e nesta incluido a lógica da documentação, e alterada 
+
+        criado em 'config' o arquivo 'breadcrumbs.php'
+            rodado o comando: php artisan vendor:publish --tag=breadcrumbs-config 
+
+        em 'resources\views\dashboard\index.blade.php' foi inserido: {{ Breadcrumbs::render('dashboard_home') }}
+
+
+https://www.youtube.com/watch?v=WGPG3zqRxmU&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6vA5f&index=12
+12-Perbaikan kode route | Part 10
+
+    -Correção do código de rota
+
+
+
+
+
 
         
         
