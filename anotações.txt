@@ -181,7 +181,16 @@ https://www.youtube.com/watch?v=CTreIgL_hfY&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6v
 13-Multi bahasa pada halaman dashboard | Part 11
 
     -Vários idiomas na página do painel
+        *SERÁ IMPLEMENTANDO POSRTERIORMENTE (SEM NECESSIDADE)
+            arquivos já criados em branco em 'lang' pastas de id e en 
+
+
+https://www.youtube.com/watch?v=PDYpUGiVbJU&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6vA5f&index=14
+14- Membuat migration tabel kategori | Part 12
+
+    -Criar migração de tabela de categorias
         
+      
 
 
 
