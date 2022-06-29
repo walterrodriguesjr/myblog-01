@@ -170,6 +170,20 @@ https://www.youtube.com/watch?v=WGPG3zqRxmU&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6v
 12-Perbaikan kode route | Part 10
 
     -Correção do código de rota
+        deletado o 'controller' 'HomeController' e também a sua referida rota e view 
+
+        deletado a 'Route' 'dashboard'
+
+        configurado a 'view' 'welcome' para reutiliza-la 
+
+
+https://www.youtube.com/watch?v=CTreIgL_hfY&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6vA5f&index=13
+13-Multi bahasa pada halaman dashboard | Part 11
+
+    -Vários idiomas na página do painel
+        
+
+
 
 
 
