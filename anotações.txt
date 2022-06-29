@@ -188,8 +188,27 @@ https://www.youtube.com/watch?v=CTreIgL_hfY&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6v
 https://www.youtube.com/watch?v=PDYpUGiVbJU&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6vA5f&index=14
 14- Membuat migration tabel kategori | Part 12
 
-    -Criar migração de tabela de categorias
+    -Criar migração (migration) de tabela de categorias
+        iniciando pela tabela 'categories'
+            criada a referida migration
+                php artisan make:migration create_categories_table
+                configurada a referida migration 'create_categories_table'
+                rodada a migration no banco
+                    php artisan migrate
+
+
+https://www.youtube.com/watch?v=017O1G3aR7w&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6vA5f&index=15
+15-  Membuat data dummy tabel kategori | Part 13   
+
+    -Criar dados fictícios da tabela de categorias
+
         
+
+
+        
+
+        
+
       
 
 
