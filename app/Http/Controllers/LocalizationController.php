@@ -12,7 +12,7 @@ class LocalizationController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function __invoke($language = 'en')
+    public function switch($language = 'en')
     {
         request()->session()->put('locale', $language);
         return redirect()->back();

@@ -140,10 +140,22 @@ https://www.youtube.com/watch?v=tgYdDBm_-6s&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6v
             php artisan make:controller LocalizationController --invokable 
             configurada a function() invokable 
         
-    -criada a 'Route': Route::get('/localization/{language}', [App\Http\COntroller\LocalizationController::class])->name('localization.switch'); 
+    -criada a 'Route': Route::get('/localization/{language}', App\Http\Controller\LocalizationController::class)->name('localization.switch'); 
 
-    parei em 14:30
 
+https://www.youtube.com/watch?v=yQpJrSDzNY8&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6vA5f&index=10
+10-Revisi Controller Localization | Part 8.1
+
+    -revisão do controller localization 
+        na 'Route' /localization/{language}, foi incluido a function 'switch', e alterado em 'LocalizationController'
+            a function '__invoke' por 'switch'
+
+
+https://www.youtube.com/watch?v=9lFcLcMgsKQ&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6vA5f&index=11
+11-Menambahkan fitur breadcrumbs | Part 9
+
+    -Adicionado recurso de breadcrumbs(sistema de migalhas de pão)
+        
 
         
         

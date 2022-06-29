@@ -15,7 +15,7 @@
                 <!-- lang:id -->
                 @switch(app()->getLocale())
                     @case('id')
-                        <i class="flag-icon flag-icon-br"></i>
+                        <i class="flag-icon flag-icon-id"></i>
                     @break
 
                     @case('en')
@@ -24,10 +24,15 @@
 
                     @default
                 @endswitch
+
+                {{ strtoupper(app()->getlocale()) }}
+
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="language">
-                <a class="dropdown-item" href="{{ route('localization.switch', ['']) }}">Indonésia</a>
-                <a class="dropdown-item" href="#">Inglês</a>
+                <a class="dropdown-item" href="{{ route('localization.switch', ['language' => 'id']) }}">Indonésia</a>
+                {{ trans('localization.id') }}
+                <a class="dropdown-item" href="{{ route('localization.switch', ['language' => 'en']) }}">Inglês</a>
+                {{ trans('localization.en') }}
             </div>
         </li>
         <li class="nav-item dropdown">
