@@ -1,3 +1,6 @@
+LINK DO REPOSITÓRIO DAS AULAS: 
+    github.com/ilmukita/Membuat-website-blog-CMS-Laravel-8-Assets
+
 https://www.youtube.com/watch?v=ij3i6ZPoEi0&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6vA5f
 1-Demo prototype website CMS (content management system) blog | Part 0
 
@@ -186,7 +189,7 @@ https://www.youtube.com/watch?v=CTreIgL_hfY&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6v
 
 
 https://www.youtube.com/watch?v=PDYpUGiVbJU&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6vA5f&index=14
-14- Membuat migration tabel kategori | Part 12
+14-Membuat migration tabel kategori | Part 12
 
     -Criar migração (migration) de tabela de categorias
         iniciando pela tabela 'categories'
@@ -198,9 +201,44 @@ https://www.youtube.com/watch?v=PDYpUGiVbJU&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6v
 
 
 https://www.youtube.com/watch?v=017O1G3aR7w&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6vA5f&index=15
-15-  Membuat data dummy tabel kategori | Part 13   
+15-Membuat data dummy tabel kategori | Part 13   
 
     -Criar dados fictícios da tabela de categorias
+        criado via cmd artisan dados em 'seeders' o arquivo 'CategoryTableSeeder' 
+            php artisan make:seeder CategoryTableSeeder
+            neste foi implementado o: 'use Illuminate\Support/Facades\DB;'
+            foi usado os dados fakes do link da aula 13 do repositorio das aulas 
+            foi inserido: DB::table('categories')->insert([ ]) e dentro os referidos dados fakes
+
+        corrigida a migration 'create_categories_table' 
+
+        em 'DatabaseSeeder.php' foi inserido: 'CategoryTableSeeder::class,'
+
+        por fim, foi rodado o cmd: php artisan migrate:fresh --seed 
+            este cmd primeiro da um fresh no banco, em seguida envia os dados do referido 'seed' ao banco 
+
+
+https://www.youtube.com/watch?v=W9rjMLRmT5k&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6vA5f&index=16
+16-Membuat model dan controller kategori | Part 14
+
+    -criando 'model' e 'controller' de Category
+
+            iniciar!
+
+
+
+
+
+
+        
+        
+
+
+        
+
+            
+
+        
 
         
 
