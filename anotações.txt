@@ -131,6 +131,21 @@ https://www.youtube.com/watch?v=tgYdDBm_-6s&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6v
 9-Membuat fitur multi bahasa | Part 8
 
     -Criando recursos em vários idiomas
+        criando a middleware Localization em 'app\Http\Middleware\Localization.php'
+            php artisan make:middleware Localization
+        em Localization.php, incluído a condicional de session que usa o método setlocale()
+        em Kernel, foi incluído '\App\Http\Middleware\Localization::class,' no grupo de web 
+        em 'config\app.php', foi alterado 'locale' => 'pt-br', mesmo local onde foi alterado 'timezone'
+        criado o controller "LocalizationController" com a diretiva '--invokable'
+            php artisan make:controller LocalizationController --invokable 
+            configurada a function() invokable 
+        
+    -criada a 'Route': Route::get('/localization/{language}', [App\Http\COntroller\LocalizationController::class])->name('localization.switch'); 
+
+    parei em 14:30
+
+
+        
         
 
         

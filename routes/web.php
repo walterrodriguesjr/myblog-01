@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
+Route::get('/localization/{language}', [App\Http\COntroller\LocalizationController::class])->name('localization.switch');
+
 Route::get('/', function () {
     return view('welcome');
 });
