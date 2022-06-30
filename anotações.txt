@@ -240,15 +240,25 @@ https://www.youtube.com/watch?v=yltO_Y14lME&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6v
         criada a em 'views' a pasta 'categories' e nesta o arquivo 'index.blade.php'
             inserido o HTML padrão do repositório do projeto, bem com as devidas @extends e @section 
 
-        configurado HTML de 'sidebar' para direcionar para dashboard e cateogries 
+        configurado HTML de 'sidebar' para direcionar para dashboard e categories 
 
 
 https://www.youtube.com/watch?v=QhgfCaW1DKQ&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6vA5f&index=18
 18-Membuat breadcrumbs halaman kategori | Part 16   
 
     -Criando breadcrumbs de página de categoria
+        inserido a '@section' de Breadcrumbs na 'index' da pasta 'categories'
+        em 'breadcrumbs.php' inserido o 'trail' de 'categories.index'
 
-            -iniciar
+
+https://www.youtube.com/watch?v=LT81v5BMwbo&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6vA5f&index=19
+19-Membuat menu active | Part 17
+
+    -fazendo o menu active 
+
+        iniciar
+
+        
     
 
 
