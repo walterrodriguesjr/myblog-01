@@ -222,8 +222,25 @@ https://www.youtube.com/watch?v=W9rjMLRmT5k&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6v
 16-Membuat model dan controller kategori | Part 14
 
     -criando 'model' e 'controller' de Category
+        php artisan make:model Category
 
-            iniciar!
+    -criado o 'controller' 'CategoryController', já com modificar --resource com todas as function() de CRUD e --model
+         que já liga com a model 'Category'
+            php artisan make:controller CategoryController --resource --model=Category
+
+    -configurada a refirada 'Route' '/categories', usando o método genérico 'resource' 
+
+    -comando artisan para filtrar o 'route:list': php artisan route:list --name=categories 
+
+
+https://www.youtube.com/watch?v=yltO_Y14lME&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6vA5f&index=17
+17-Membuat halaman utama kategori | Part 15
+
+    -Criar página principal da categoria 
+        
+
+
+            
 
 
 
