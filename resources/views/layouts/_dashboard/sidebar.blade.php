@@ -3,7 +3,7 @@
     <div class="sb-sidenav-menu">
        <div class="nav">
          {{-- link:dashboard --}}
-          <a class="nav-link active" href="{{route('dashboard.index')}}">
+          <a class="nav-link {{ set_active('dashboard.index') }}" href="{{route('dashboard.index')}}">
              <div class="sb-nav-link-icon">
                 <i class="fas fa-tachometer-alt"></i>
              </div>
@@ -18,8 +18,8 @@
              Posts
           </a>
 
-          {{-- menu:categories --}}
-          <a class="nav-link" href="{{route('categories.index')}}">
+          {{-- link:categories --}}
+          <a class="nav-link {{ set_active('categories.index') }}" href="{{route('categories.index')}}">
              <div class="sb-nav-link-icon">
                 <i class="fas fa-bookmark"></i>
              </div>

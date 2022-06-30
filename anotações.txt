@@ -255,8 +255,38 @@ https://www.youtube.com/watch?v=LT81v5BMwbo&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6v
 19-Membuat menu active | Part 17
 
     -fazendo o menu active 
+        dentro da pasta 'app' foi criada a pasta 'helper', e dentro deste, 'Helper.php'
+            dentro de "Helper.php" foi configurada a lógica toda 
 
-        iniciar
+        em 'composer.json' foi inserido o 'files' em 'autoload'
+
+        rodado o cmd: composer dump-autoload  
+
+        inserido no HTML de 'sidebar' as funções criadas no Helper.php
+
+
+https://www.youtube.com/watch?v=r_GD9phsdj0&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6vA5f&index=20 
+20-Menampilkan data kategori | Part 18 
+
+    -Mostrar dados de Category
+        em 'controller' 'CategoryController', a var $categories recebe a lógica
+        na view 'index' da pasta 'categories' e feito um foreach para trazer os dados
+        na model 'Category' 
+
+
+https://www.youtube.com/watch?v=qs556VqSE0A&list=PLhG9IAaB9ArrTsTAOWNTi0D2jkLQ6vA5f&index=21
+21-Membuat query scope only parent | Part 19
+
+    -Tornar um escopo de consulta apenas pai
+        
+
+
+
+
+
+
+
+
 
         
     
